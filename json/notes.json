@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "subject": "CS 201",
+    "title": "Binary Search Trees",
+    "date": "Nov 18, 2026",
+    "body": "Every left child is smaller than its parent, and every right child is larger. Average search time is O(log n)."
+  },
+  {
+    "id": 2,
+    "subject": "MATH 240",
+    "title": "Eigenvalues & Eigenvectors",
+    "date": "Nov 16, 2026",
+    "body": "Solve det(A - lambda * I) = 0 to find eigenvalues, then find null(A - lambda * I) for eigenvectors."
+  },
+  {
+    "id": 3,
+    "subject": "PHYS 112",
+    "title": "Angular Momentum",
+    "date": "Nov 14, 2026",
+    "body": "Angular momentum L = I * omega stays constant when net external torque is zero."
+  }
+]

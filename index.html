@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Folio — Minimalist College Notes</title>
+    <meta
+      name="description"
+      content="A simple, clean, and minimalist college notes website for organizing lecture notes by subject."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@500;600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="module" src="./json/script.js"></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-row">
+        <a href="#home" class="brand" data-page="home">Folio</a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#home" class="nav-link active" data-page="home">Home</a>
+          <a href="#notes" class="nav-link" data-page="notes">Notes</a>
+          <a href="#about" class="nav-link" data-page="about">About</a>
+        </nav>
+        <a href="./html/folio-college-notes.zip" download="folio-college-notes.zip" class="btn btn-primary">
+          Download .zip
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- Page 1: Home -->
+      <section id="page-home" class="page">
+        <div class="hero-banner">
+          <div class="container hero-content">
+            <h1>Simple College Notes</h1>
+            <p class="subtitle">
+              A quiet, distraction-free notebook to write and organize your lecture notes by subject.
+            </p>
+            <div class="hero-actions">
+              <a href="#notes" class="btn btn-primary" data-page="notes">Open Notes</a>
+              <a href="#about" class="btn btn-secondary" data-page="about">About App</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="container home-cards">
+          <div class="info-card">
+            <h3>01. Course Filters</h3>
+            <p>Organize lectures across CS 201, MATH 240, PHYS 112, and HIST 105.</p>
+          </div>
+          <div class="info-card">
+            <h3>02. Instant Search</h3>
+            <p>Find formulas, definitions, and exam notes quickly before class.</p>
+          </div>
+          <div class="info-card">
+            <h3>03. Local Storage</h3>
+            <p>All notes stay saved automatically inside your browser.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Page 2: Notes -->
+      <section id="page-notes" class="page" hidden>
+        <div class="notes-banner">
+          <div class="container">
+            <h2>My Lecture Notes</h2>
+            <p class="subtitle">Add a new note or filter existing notes by subject.</p>
+          </div>
+        </div>
+
+        <div class="container workspace">
+          <form id="note-form" class="note-form">
+            <div class="form-row">
+              <select id="subject-input" aria-label="Course subject">
+                <option value="CS 201">CS 201</option>
+                <option value="MATH 240">MATH 240</option>
+                <option value="PHYS 112">PHYS 112</option>
+                <option value="HIST 105">HIST 105</option>
+              </select>
+              <input id="title-input" type="text" placeholder="Lecture title..." required />
+            </div>
+            <textarea
+              id="body-input"
+              rows="4"
+              placeholder="Write your lecture notes here..."
+              required
+            ></textarea>
+            <button type="submit" class="btn btn-primary">Save Note</button>
+          </form>
+
+          <div class="toolbar">
+            <div class="filters" role="tablist" aria-label="Filter by subject">
+              <button type="button" class="filter-btn active" data-subject="ALL">All</button>
+              <button type="button" class="filter-btn" data-subject="CS 201">CS 201</button>
+              <button type="button" class="filter-btn" data-subject="MATH 240">MATH 240</button>
+              <button type="button" class="filter-btn" data-subject="PHYS 112">PHYS 112</button>
+              <button type="button" class="filter-btn" data-subject="HIST 105">HIST 105</button>
+            </div>
+            <input id="search-input" type="search" placeholder="Search notes..." aria-label="Search notes" />
+          </div>
+
+          <div id="notes-list" class="notes-list"></div>
+        </div>
+      </section>
+
+      <!-- Page 3: About -->
+      <section id="page-about" class="page" hidden>
+        <div class="container about-grid">
+          <div class="about-copy">
+            <h2>About Folio</h2>
+            <p>
+              Folio is a minimalist college notes application built with plain HTML, CSS, and
+              JavaScript. It focuses on clean typography, calm spacing, and simple organization
+              without extra animations or clutter.
+            </p>
+            <p>
+              You can switch between Home, Notes, and About pages, save lecture notes directly in
+              your browser, or download the source files to present in class.
+            </p>
+            <div class="hero-actions">
+              <a href="./html/folio-college-notes.zip" download="folio-college-notes.zip" class="btn btn-primary">
+                Download Code (.zip)
+              </a>
+              <a href="#notes" class="btn btn-secondary" data-page="notes">Go to Notes</a>
+            </div>
+          </div>
+
+          <div class="about-image">
+            <img src="./html/notebook.jpg" alt="Open college notebook and pen on a wooden desk" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>Folio — Simple College Notes</p>
+        <a href="./html/folio-college-notes.zip" download="folio-college-notes.zip">Download .zip</a>
+      </div>
+    </footer>
+  </body>
+</html>

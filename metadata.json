@@ -1,0 +1,6 @@
+{
+  "name": "Folio — Minimalist College Notes",
+  "description": "A simple, clean, and minimalist college notes website and workspace for organizing lecture notes by course.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

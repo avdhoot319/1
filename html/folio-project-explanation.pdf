@@ -1,0 +1,220 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [6 0 R 8 0 R 10 0 R] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 6179 >>
+stream
+BT /F2 19.5 Tf 0.070 0.070 0.080 rg 52 744.0 Td (Folio - Minimalist College Notes Application) Tj ET
+BT /F1 11 Tf 0.110 0.310 0.850 rg 52 720.0 Td (Complete Code & Project File Architecture Guide) Tj ET
+0.89 0.89 0.91 RG 0.8 w 52 708.0 m 560 708.0 l S
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 692.0 Td (This document explains every file in the Folio College Notes project, why each file) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 679.0 Td (exists, how the browser and Vite build system work together, and how the HTML, CSS, and) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 666.0 Td (JavaScript code runs step by step.) Tj ET
+BT /F2 13.5 Tf 0.070 0.070 0.080 rg 52 644.0 Td (1. How the Project Works \(Big Picture\)) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 635.0 m 560 635.0 l S
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 622.0 Td (This project lives inside an AI Studio / Vite workspace, which includes Node/Vite) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 609.0 Td (configuration files alongside your three core web files: index.html \(structure\), style.css) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 596.0 Td (\(design\), and script.js \(logic\).) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 580.0 Td (When running on the development server \(port 3000\), Vite serves index.html,) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 567.0 Td (compiles/serves style.css and script.js, and exposes static files from public/ at the site) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 554.0 Td (root \(/\). Downloading folio-college-notes.zip packages index.html, style.css, script.js,) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 541.0 Td (bg-study.jpg, and notebook.jpg so the site works standalone.) Tj ET
+BT /F2 13.5 Tf 0.070 0.070 0.080 rg 52 519.0 Td (2. Core Website Files \(HTML, CSS, JavaScript\)) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 510.0 m 560 510.0 l S
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 494.0 Td (index.html \(156 lines\) - Page Structure & Content) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 480.0 Td (index.html is the entry point of the website. Every browser loads this file first and) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 467.0 Td (builds the DOM \(Document Object Model\) from its tags.) Tj ET
+0.97 0.97 0.98 rg 52 416.1 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 416.1 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 451.0 Td (Lines 1-19 \(<head>\): Sets UTF-8 encoding, mobile viewport scaling, page title, SEO) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 439.2 Td (description, loads Google Fonts \(IBM Plex Mono, Outfit, Plus Jakarta Sans\), links) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 427.4 Td (./style.css, and loads ./script.js as an ES module.) Tj ET
+0.97 0.97 0.98 rg 52 372.7 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 372.7 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 407.6 Td (Lines 21-33 \(<header>\): Renders the top navigation bar with the 'Folio' brand link,) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 395.8 Td (three page links \(Home, Notes, About\) using data-page attributes, and a 'Download) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 384.0 Td (.zip' button.) Tj ET
+0.97 0.97 0.98 rg 52 341.1 508 31.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 341.1 508 31.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 364.2 Td (Lines 37-65 \(#page-home\): Page 1 \(Home\). Contains .hero-banner \(title, subtitle,) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 352.4 Td (Open Notes / About App buttons\) and .home-cards \(3 feature summary cards\).) Tj ET
+0.97 0.97 0.98 rg 52 285.9 508 55.2 re f
+0.89 0.89 0.91 RG 0.5 w 52 285.9 508 55.2 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 332.6 Td (Lines 68-109 \(#page-notes\): Page 2 \(Notes\). Hidden initially using the HTML 'hidden') Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 320.8 Td (attribute. Contains #note-form \(subject <select>, #title-input, #body-input, Save) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 309.0 Td (Note button\), .toolbar \(subject filter buttons + #search-input\), and #notes-list) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 297.2 Td (\(populated by JavaScript\).) Tj ET
+0.97 0.97 0.98 rg 52 254.3 508 31.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 254.3 508 31.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 277.4 Td (Lines 112-143 \(#page-about\): Page 3 \(About\). Hidden initially. Displays project) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 265.6 Td (details, Download Code \(.zip\) / Download Guide \(.pdf\) links, and notebook.jpg.) Tj ET
+0.97 0.97 0.98 rg 52 222.7 508 31.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 222.7 508 31.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 245.8 Td (Lines 146-154 \(<footer>\): Displays the footer bar with Guide \(.pdf\) and Download) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 234.0 Td (.zip links.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 211.2 Td (style.css \(383 lines\) - Visual Styling & Layout) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 197.2 Td (style.css controls colors, typography, spacing, background images, and mobile) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 184.2 Td (responsiveness without any external CSS frameworks or animations.) Tj ET
+0.97 0.97 0.98 rg 52 133.3 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 133.3 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 168.2 Td (Lines 1-9 \(:root\): Defines reusable CSS custom properties for colors: --bg) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 156.4 Td (\(#ffffff\), --surface \(#f7f7f8\), --border \(#e4e4e7\), --text \(#111113\), --muted) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 144.6 Td (\(#52525b\), and --accent \(#1d4ed8\).) Tj ET
+0.97 0.97 0.98 rg 52 89.9 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 89.9 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 124.8 Td (Lines 11-48 \(Base & Container\): Applies box-sizing: border-box, sets sticky-footer) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 113.0 Td (flex layout on <body>, applies Plus Jakarta Sans for body text and Outfit for) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 101.2 Td (headings, and centers content inside .container \(max-width: 860px\).) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 40 m 560 40 l S
+BT /F1 8.5 Tf 0.45 0.45 0.48 rg 52 27 Td (Folio College Notes - Architecture & Code Guide   |   Page 1 of 3) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 6779 >>
+stream
+0.97 0.97 0.98 rg 52 709.1 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 709.1 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 744.0 Td (Lines 50-87 \(.site-header & .nav-links\): Uses Flexbox \(justify-content:) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 732.2 Td (space-between\) to align the brand, links, and download button. Active links get an) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 720.4 Td (underline and bold weight.) Tj ET
+0.97 0.97 0.98 rg 52 677.5 508 31.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 677.5 508 31.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 700.6 Td (Lines 89-135 \(Buttons & Inputs\): Styles .btn, .btn-primary, .btn-secondary, and form) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 688.8 Td (inputs with clear 2px blue :focus outlines for keyboard accessibility.) Tj ET
+0.97 0.97 0.98 rg 52 622.3 508 55.2 re f
+0.89 0.89 0.91 RG 0.5 w 52 622.3 508 55.2 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 669.0 Td (Lines 137-190 \(.hero-banner & .home-cards\): Applies bg-study.jpg as a CSS) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 657.2 Td (background-image layered beneath a translucent white linear-gradient scrim) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 645.4 Td (\(rgba\(255,255,255,0.8 to 0.88\)\) so text remains readable. Lays out the 3 summary) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 633.6 Td (cards using CSS Grid \(repeat\(3, 1fr\)\).) Tj ET
+0.97 0.97 0.98 rg 52 567.1 508 55.2 re f
+0.89 0.89 0.91 RG 0.5 w 52 567.1 508 55.2 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 613.8 Td (Lines 192-323 \(.notes-banner, .note-form, .toolbar, .note-card\): Applies) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 602.0 Td (notebook.jpg with a white scrim on the Notes header, lays out the form row in 2) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 590.2 Td (columns \(140px select + 1fr title\), styles monospace filter buttons, and renders) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 578.4 Td (note cards.) Tj ET
+0.97 0.97 0.98 rg 52 535.5 508 31.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 535.5 508 31.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 558.6 Td (Lines 325-382 \(.about-grid, .site-footer, @media\): Creates a 2-column About grid and) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 546.8 Td (collapses multi-column grids to 1 column on screens <= 720px.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 524.0 Td (script.js \(163 lines\) - Interactive Logic & Storage) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 510.0 Td (script.js handles multi-page navigation, saving notes in the browser, filtering by) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 497.0 Td (subject, searching, and deleting notes.) Tj ET
+0.97 0.97 0.98 rg 52 446.1 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 446.1 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 481.0 Td (Lines 1-29 \(State & Storage\): Defines STORAGE_KEY \('folio_simple_notes'\) and) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 469.2 Td (defaultNotes \(3 sample college notes\). Reads saved JSON from localStorage on startup) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 457.4 Td (or falls back to defaultNotes.) Tj ET
+0.97 0.97 0.98 rg 52 414.5 508 31.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 414.5 508 31.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 437.6 Td (Lines 31-44 \(DOM References\): Caches references to the 3 page <section> elements,) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 425.8 Td (nav links, form inputs, search input, filter buttons, and #notes-list.) Tj ET
+0.97 0.97 0.98 rg 52 359.3 508 55.2 re f
+0.89 0.89 0.91 RG 0.5 w 52 359.3 508 55.2 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 406.0 Td (Lines 46-75 \(Page Routing\): showPage\(pageName\) toggles the HTML 'hidden' attribute) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 394.2 Td (on #page-home, #page-notes, and #page-about, updates the active nav underline, and) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 382.4 Td (scrolls to top. Clicks on [data-page] and window 'hashchange' let #home, #notes, and) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 370.6 Td (#about work like separate pages.) Tj ET
+0.97 0.97 0.98 rg 52 304.1 508 55.2 re f
+0.89 0.89 0.91 RG 0.5 w 52 304.1 508 55.2 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 350.8 Td (Lines 77-128 \(saveNotes & renderNotes\): saveNotes\(\) serializes notes to) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 339.0 Td (localStorage. renderNotes\(\) filters by activeSubject and searchText, builds <article) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 327.2 Td (class='note-card'> elements safely using .textContent \(preventing HTML injection\),) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 315.4 Td (and wires each card's Delete button.) Tj ET
+0.97 0.97 0.98 rg 52 260.7 508 43.4 re f
+0.89 0.89 0.91 RG 0.5 w 52 260.7 508 43.4 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 295.6 Td (Lines 130-162 \(Event Listeners\): Form 'submit' creates a new note with Date.now\(\) ID) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 283.8 Td (and formatted date, prepends it with notes.unshift\(\), saves, resets the form, and) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 272.0 Td (re-renders. Filter buttons and search input update state immediately.) Tj ET
+BT /F2 13.5 Tf 0.070 0.070 0.080 rg 52 246.2 Td (3. Directories & Asset Files) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 237.2 m 560 237.2 l S
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 221.2 Td (public/ Directory) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 207.2 Td (In Vite, files inside public/ are served directly from the root URL \(/\) without bundling) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 194.2 Td (or renaming:) Tj ET
+0.97 0.97 0.98 rg 52 96.1 508 90.6 re f
+0.89 0.89 0.91 RG 0.5 w 52 96.1 508 90.6 re S
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 178.2 Td (- public/bg-study.jpg: Sunlit study hall photo used as the CSS background on the) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 166.4 Td (Home banner.) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 154.6 Td (- public/notebook.jpg: Overhead open notebook photo used on the Notes banner and) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 142.8 Td (About page.) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 131.0 Td (- public/folio-college-notes.zip: Downloadable ZIP archive \(index.html with <script) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 119.2 Td (defer>, style.css, script.js, bg-study.jpg, notebook.jpg\).) Tj ET
+BT /F3 8.6 Tf 0.120 0.120 0.140 rg 60 107.4 Td (- public/folio-project-explanation.pdf: This PDF explanation guide.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 84.6 Td (src/ Directory) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 70.6 Td (Originally held React/TypeScript files \(App.tsx, main.tsx, components/\) from the starter) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 40 m 560 40 l S
+BT /F1 8.5 Tf 0.45 0.45 0.48 rg 52 27 Td (Folio College Notes - Architecture & Code Guide   |   Page 2 of 3) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 2760 >>
+stream
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 744.0 Td (template. Those React files were removed so only pure HTML, CSS, and JavaScript remain.) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 731.0 Td (Only src/assets/images/ stays, holding the original generated JPEG images.) Tj ET
+BT /F2 13.5 Tf 0.070 0.070 0.080 rg 52 709.0 Td (4. Configuration & Environment Files) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 700.0 m 560 700.0 l S
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 684.0 Td (package.json & bun.lock) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 670.0 Td (package.json defines the project scripts \('dev' starts Vite on port 3000, 'build' bundles) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 657.0 Td (production files into dist/, 'lint' runs tsc --noEmit\) and installed npm packages.) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 644.0 Td (bun.lock pins exact dependency versions.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 625.0 Td (vite.config.ts) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 611.0 Td (Configures Vite: resolves '@' path aliases, disables HMR file watching when) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 598.0 Td (DISABLE_HMR=true, and copies src/assets into dist/src/assets during production builds.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 579.0 Td (tsconfig.json) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 565.0 Td (Configures TypeScript checking \(ES2022 target, bundler module resolution, allowJs: true,) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 552.0 Td (noEmit: true, excluding dist/\). Running 'tsc --noEmit' verifies there are no syntax errors) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 539.0 Td (in vite.config.ts or script.js.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 520.0 Td (metadata.json) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 506.0 Td (Stores AI Studio applet metadata: application name \('Folio -- Minimalist College Notes'\),) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 493.0 Td (description, permissions, and capabilities.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 474.0 Td (.env.example) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 460.0 Td (Template documenting environment variables \(GEMINI_API_KEY and APP_URL\) with placeholder) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 447.0 Td (values and zero secrets.) Tj ET
+BT /F2 11 Tf 0.110 0.310 0.850 rg 52 428.0 Td (.gitignore) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 414.0 Td (Tells Git to ignore generated or sensitive paths: node_modules/, build/, dist/, coverage/,) Tj ET
+BT /F1 9.8 Tf 0.150 0.150 0.170 rg 52 401.0 Td (.DS_Store, *.log, and .env* files \(while keeping !.env.example\).) Tj ET
+0.89 0.89 0.91 RG 0.5 w 52 40 m 560 40 l S
+BT /F1 8.5 Tf 0.45 0.45 0.48 rg 52 27 Td (Folio College Notes - Architecture & Code Guide   |   Page 3 of 3) Tj ET
+endstream
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000128 00000 n 
+0000000225 00000 n 
+0000000327 00000 n 
+0000000422 00000 n 
+0000000568 00000 n 
+0000006799 00000 n 
+0000006945 00000 n 
+0000013776 00000 n 
+0000013924 00000 n 
+trailer
+<< /Size 12 /Root 1 0 R >>
+startxref
+16737
+%%EOF
